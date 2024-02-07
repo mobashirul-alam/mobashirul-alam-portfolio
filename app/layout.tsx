@@ -18,8 +18,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${firaCode.className} h-screen p-[69px]`}>
-                <div className="bg-[#010c15] h-full border border-[#1E2D3D] rounded-[8px] flex flex-col justify-between">
+            <body
+                className={`${firaCode.className} h-screen p-[49px] bg-[#010c15]`}
+            >
+                <div className="bg-[#011627] h-full border border-[#1E2D3D] rounded-[8px] flex flex-col justify-between">
                     <Navbar />
                     <div className="">{children}</div>
                     <Footer />
