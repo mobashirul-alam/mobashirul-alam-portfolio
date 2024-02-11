@@ -106,7 +106,9 @@ const MainForm = () => {
                         </FormItem>
                     )}
                 />
-                <Button type="submit">Submit</Button>
+                <Button type="submit" className="border hover:border-white">
+                    Submit
+                </Button>
             </form>
         </Form>
     );
