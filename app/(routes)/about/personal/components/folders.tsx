@@ -47,30 +47,11 @@ const Folders: React.FC<FoldersProps> = ({
                     <RiArrowRightSLine className="mr-3" />
                     <div
                         className="cursor-pointer flex items-center"
-                        onClick={() => setSelectedFolder("interest")}
-                    >
-                        <RiFolder3Fill
-                            size={16}
-                            className="mr-2 text-[#43D9AD]"
-                        />
-                        <p
-                            className={`font-light leading-[21px] hover:text-white duration-100 ${
-                                selectedFolder === "interest" && "text-white"
-                            }`}
-                        >
-                            interest
-                        </p>
-                    </div>
-                </div>
-                <div className="flex items-center mb-2">
-                    <RiArrowRightSLine className="mr-3" />
-                    <div
-                        className="cursor-pointer flex items-center"
                         onClick={() => setSelectedFolder("education")}
                     >
                         <RiFolder3Fill
                             size={16}
-                            className="mr-2 text-[#3A49A4]"
+                            className="mr-2 text-[#43D9AD]"
                         />
                         <p
                             className={`font-light leading-[21px] hover:text-white duration-100 ${

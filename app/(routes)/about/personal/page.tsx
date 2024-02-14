@@ -3,6 +3,7 @@
 import { useState } from "react";
 import CodeSnippet from "../components/codeSnippet";
 import Bio from "./components/bio";
+import Education from "./components/education";
 import Folders from "./components/folders";
 
 const PersonalInfo = () => {
@@ -16,6 +17,7 @@ const PersonalInfo = () => {
 
             <div className="grid grid-cols-2 w-full">
                 {selectedFolder === "bio" && <Bio />}
+                {selectedFolder === "education" && <Education />}
 
                 <CodeSnippet />
             </div>

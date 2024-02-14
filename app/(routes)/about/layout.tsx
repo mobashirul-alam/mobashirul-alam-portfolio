@@ -7,7 +7,7 @@ export default function AboutPageLayout({
 }>) {
     return (
         <div className="flex items-start h-full">
-            <div className="border-r h-full">
+            <div className="border-r h-full w-[64px]">
                 <AboutRoutes />
             </div>
             <div className="w-full h-full">{children}</div>

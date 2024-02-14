@@ -3,10 +3,9 @@ import Image from "next/image";
 
 export default function Home() {
     return (
-        <div className="flex justify-center items-center h-full">
-            <div className="grid grid-cols-12 w-full h-full">
-                <div className="col-span-2"></div>
-                <div className="col-span-4 flex items-center">
+        <div className="flex justify-center items-center h-full px-80">
+            <div className="grid grid-cols-2 w-full h-full">
+                <div className=" flex items-center">
                     <div>
                         <p className="text-lg font-[450] text-[#E5E9F0]">
                             Hi all. I am
@@ -82,17 +81,10 @@ export default function Home() {
                     className="absolute -bottom-24 -right-40 -z-0 opacity-60"
                 />
             </div> */}
-                <div className="col-span-4 flex items-center">
+                <div className="flex justify-end items-center">
                     <div className="relative">
-                        {/* <LottiePlayer src="https://lottie.host/676dabdf-d1cb-49f8-8807-7989978688d6/H7xaPtOrNn.json" /> */}
                         <LottiePlayer src="https://lottie.host/1500a3e0-d621-4225-9e05-3cd214891e81/WlmhjUswwG.json" />
-                        {/* <Image
-                    alt=""
-                    src="/Green.svg"
-                    width={954}
-                    height={492}
-                    className="absolute -top-32 -left-40 -z-0 opacity-60"
-                /> */}
+
                         <Image
                             alt=""
                             src="/Blue.svg"
@@ -102,7 +94,6 @@ export default function Home() {
                         />
                     </div>
                 </div>
-                <div className="col-span-2"></div>
             </div>
         </div>
     );

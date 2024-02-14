@@ -15,19 +15,32 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Dispatch, SetStateAction } from "react";
 import { toast } from "sonner";
 
 const FormSchema = z.object({
     name: z.string().min(3, {
-        message: "Name must be at least 2 characters.",
+        message: "Name is required.",
     }),
     email: z.string().min(1, {
         message: "Email is required.",
     }),
-    message: z.string(),
+    message: z.string().min(5, {
+        message: "Message is required.",
+    }),
 });
 
-const MainForm = () => {
+interface MainFormProps {
+    setName: Dispatch<SetStateAction<string>>;
+    setEmail: Dispatch<SetStateAction<string>>;
+    setMessage: Dispatch<SetStateAction<string>>;
+}
+
+const MainForm: React.FC<MainFormProps> = ({
+    setName,
+    setEmail,
+    setMessage,
+}) => {
     const form = useForm<z.infer<typeof FormSchema>>({
         resolver: zodResolver(FormSchema),
         defaultValues: {
@@ -60,6 +73,7 @@ const MainForm = () => {
                             <FormControl className="bg-transparent">
                                 <Input
                                     placeholder="Your name"
+                                    onChange={setName(field.value)}
                                     {...field}
                                     className="font-[450] bg-transparent border-[#1E2D3D] focus:bg-transparent"
                                 />
@@ -79,6 +93,7 @@ const MainForm = () => {
                             <FormControl className="bg-transparent">
                                 <Input
                                     placeholder="Your email"
+                                    onChange={setEmail(field.value)}
                                     {...field}
                                     className="font-[450] bg-transparent border-[#1E2D3D] focus:bg-transparent"
                                 />
@@ -98,6 +113,7 @@ const MainForm = () => {
                             <FormControl className="bg-transparent">
                                 <Textarea
                                     placeholder="Message..."
+                                    onChange={setMessage(field.value)}
                                     {...field}
                                     className="min-h-36 font-[450] bg-transparent border-[#1E2D3D] focus:bg-transparent"
                                 />

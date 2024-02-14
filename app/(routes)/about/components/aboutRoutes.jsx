@@ -16,7 +16,7 @@ const AboutRoutes = () => {
             {routes.map((route) => (
                 <div
                     key={route.id}
-                    className="py-4 w-[63px] flex justify-center"
+                    className="py-4 w-[64px] flex justify-center"
                 >
                     <Link href={route.link}>
                         <route.icon
