@@ -28,6 +28,10 @@ const Navbar = () => {
                                 href={link.link}
                                 className={`h-full py-4 px-8 border-r hover:text-white ${
                                     pathname === link.link && "text-white"
+                                } ${
+                                    pathname === "/about/professional" &&
+                                    link.link.includes("/about") &&
+                                    "text-white"
                                 } duration-200`}
                             >
                                 {link.text}
@@ -35,6 +39,10 @@ const Navbar = () => {
                             <div
                                 className={`absolute bottom-0 h-[0] w-full bg-[#FEA55F] group-hover:h-[3px] ${
                                     pathname === link.link && "h-[3px]"
+                                } ${
+                                    pathname === "/about/professional" &&
+                                    link.link.includes("/about") &&
+                                    "h-[3px]"
                                 } duration-300`}
                             ></div>
                         </div>

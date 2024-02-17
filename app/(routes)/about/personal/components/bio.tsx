@@ -30,32 +30,34 @@ const Bio = () => {
                         </p>
                     </div>
                 </div>
-                <p className=" text-base">
-                    Hey there! I&apos;m Mobashirul,
-                    <br />
-                    <br />
-                    A passionate Front-end developer with over 1.5 years of
-                    experience in web development. Specializing in MERN Stack
-                    development, I&apos;ve honed my skills in MongoDB,
-                    Express.js, React, and Node.js, while recently delving into
-                    Next.js and Prisma to enhance my projects.
-                    <br />
-                    <br />
-                    I thrive in team environments and have a record of
-                    successful collaboration, working alongside designers, and
-                    fellow developers to bring ideas to life. Solving problems
-                    and debugging issues bring me immense satisfaction, and I
-                    excel at unraveling complex bugs and finding creative
-                    solutions. Overcoming obstacles with my problem-solving
-                    skills and determination is incredibly rewarding.
-                    <br /> <br />
-                    Outside of coding, you&apos;ll find me exploring nature, and
-                    entertained with sports like cricket, football, or cycle
-                    riding. With a passion for continuous learning and a knack
-                    for problem-solving, I&apos;m excited about the journey
-                    ahead and the endless possibilities in the world of web
-                    development.
-                </p>
+                <div className="text-lg space-y-3">
+                    <p>Hey there! I&apos;m Mobashirul,</p>
+                    <p>
+                        A passionate Front-end developer with over 1.5 years of
+                        experience in web development. Specializing in MERN
+                        Stack development, I&apos;ve honed my skills in MongoDB,
+                        Express.js, React, and Node.js, while recently delving
+                        into Next.js and Prisma to enhance my projects.
+                    </p>
+                    <p>
+                        I thrive in team environments and have a record of
+                        successful collaboration, working alongside designers,
+                        and fellow developers to bring ideas to life. Solving
+                        problems and debugging issues bring me immense
+                        satisfaction, and I excel at unraveling complex bugs and
+                        finding creative solutions. Overcoming obstacles with my
+                        problem-solving skills and determination is incredibly
+                        rewarding.
+                    </p>
+                    <p>
+                        Outside of coding, you&apos;ll find me exploring nature,
+                        and entertained with sports like cricket, football, or
+                        cycle riding. With a passion for continuous learning and
+                        a knack for problem-solving, I&apos;m excited about the
+                        journey ahead and the endless possibilities in the world
+                        of web development.
+                    </p>
+                </div>
             </div>
         </div>
     );
