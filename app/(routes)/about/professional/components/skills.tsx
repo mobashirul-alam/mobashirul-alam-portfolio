@@ -9,9 +9,22 @@ import {
     RiReactjsFill,
     RiTrelloFill,
 } from "@remixicon/react";
-import { BiLogoNetlify, BiLogoTypescript } from "react-icons/bi";
-import { SiFirebase, SiPostman, SiTailwindcss, SiVercel } from "react-icons/si";
-import { TbBrandNextjs, TbBrandRedux, TbBrandVscode } from "react-icons/tb";
+import { BiLogoMongodb, BiLogoNetlify, BiLogoTypescript } from "react-icons/bi";
+import {
+    SiExpress,
+    SiFirebase,
+    SiMongoose,
+    SiPostman,
+    SiPrisma,
+    SiTailwindcss,
+    SiVercel,
+} from "react-icons/si";
+import {
+    TbBrandNextjs,
+    TbBrandNodejs,
+    TbBrandRedux,
+    TbBrandVscode,
+} from "react-icons/tb";
 
 const Skills = () => {
     const languageSkills = [
@@ -53,21 +66,29 @@ const Skills = () => {
         { id: 6, name: "Postman", icon: SiPostman },
         { id: 7, name: "Trello", icon: RiTrelloFill },
     ];
+    // Backend Development - Node.js, Express, Mongoose, Prisma, MongoDB
+    const backendSkills = [
+        { id: 1, name: "Node.js", icon: TbBrandNodejs },
+        { id: 2, name: "Express", icon: SiExpress },
+        { id: 3, name: "Mongoose", icon: SiMongoose },
+        { id: 4, name: "Prisma", icon: SiPrisma },
+        { id: 5, name: "MongoDB", icon: BiLogoMongodb },
+    ];
     return (
-        <div className="w-full border-r">
+        <div className="w-full border-r ">
             <div className="border-b">
                 <div className="w-64 flex justify-between items-center gap-x-3 py-3 px-4 border-r font-light">
                     <p>skills</p>
                     <RiCloseLine />
                 </div>
             </div>
-            <ScrollArea className="h-96">
+            <ScrollArea className="h-[calc(100vh-260px)]">
                 <div className="p-5">
                     <div className="mb-5">
                         <h1 className="text-base font-medium text-white mb-2">
                             Languages
                         </h1>
-                        <div className="flex items-center gap-5">
+                        <div className="flex flex-wrap items-center gap-5">
                             {languageSkills.map((skill) => (
                                 <div
                                     key={skill.id}
@@ -119,10 +140,10 @@ const Skills = () => {
                     </div>
                     <div className="mb-5">
                         <h1 className="text-base font-medium text-white mb-2">
-                            Tools & Platforms
+                            Back-end (Basic)
                         </h1>
                         <div className="flex flex-wrap items-center gap-5">
-                            {tools.map((skill) => (
+                            {backendSkills.map((skill) => (
                                 <div
                                     key={skill.id}
                                     className="border hover:border-white/50 shadow-md py-3 rounded-md flex flex-col justify-center items-center w-36 duration-1000"

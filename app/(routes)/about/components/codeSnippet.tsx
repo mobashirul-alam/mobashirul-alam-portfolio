@@ -10,7 +10,7 @@ const CodeSnippet = () => {
                 </div>
             </div>
 
-            <div>Code snippets</div>
+            <div className="p-5">Code snippets</div>
         </div>
     );
 };

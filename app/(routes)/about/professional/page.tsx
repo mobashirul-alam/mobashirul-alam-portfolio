@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import CodeSnippet from "../components/codeSnippet";
-import Certificates from "./components/certificates";
+import Achievements from "./components/achievements";
 import Experiences from "./components/experiences";
 import Folders from "./components/folders";
 import Skills from "./components/skills";
@@ -19,7 +19,7 @@ const ProfessionalPage = () => {
             <div className="grid grid-cols-2 w-full">
                 {selectedFolder === "skills" && <Skills />}
                 {selectedFolder === "experiences" && <Experiences />}
-                {selectedFolder === "certificates" && <Certificates />}
+                {selectedFolder === "achievements" && <Achievements />}
 
                 <CodeSnippet />
             </div>

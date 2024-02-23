@@ -66,7 +66,7 @@ const Folders: React.FC<FoldersProps> = ({
                     <RiArrowRightSLine className="mr-3" />
                     <div
                         className="cursor-pointer flex items-center"
-                        onClick={() => setSelectedFolder("certificates")}
+                        onClick={() => setSelectedFolder("achievements")}
                     >
                         <RiFolder3Fill
                             size={16}
@@ -74,11 +74,11 @@ const Folders: React.FC<FoldersProps> = ({
                         />
                         <p
                             className={`font-light leading-[21px] hover:text-white duration-100 ${
-                                selectedFolder === "certificates" &&
+                                selectedFolder === "achievements" &&
                                 "text-white"
                             }`}
                         >
-                            certificates
+                            achievements
                         </p>
                     </div>
                 </div>
