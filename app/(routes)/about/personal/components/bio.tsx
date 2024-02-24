@@ -30,7 +30,7 @@ const Bio = () => {
                         </p>
                     </div>
                 </div>
-                <div className="text-lg space-y-3">
+                <div className="text-base space-y-3">
                     <p>Hey there! I&apos;m Mobashirul,</p>
                     <p>
                         A passionate Front-end developer with over 1.5 years of

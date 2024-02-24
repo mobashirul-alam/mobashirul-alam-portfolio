@@ -66,7 +66,7 @@ const Skills = () => {
         { id: 6, name: "Postman", icon: SiPostman },
         { id: 7, name: "Trello", icon: RiTrelloFill },
     ];
-    // Backend Development - Node.js, Express, Mongoose, Prisma, MongoDB
+
     const backendSkills = [
         { id: 1, name: "Node.js", icon: TbBrandNodejs },
         { id: 2, name: "Express", icon: SiExpress },
@@ -74,6 +74,7 @@ const Skills = () => {
         { id: 4, name: "Prisma", icon: SiPrisma },
         { id: 5, name: "MongoDB", icon: BiLogoMongodb },
     ];
+
     return (
         <div className="w-full border-r ">
             <div className="border-b">
