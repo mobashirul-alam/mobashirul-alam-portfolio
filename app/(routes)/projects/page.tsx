@@ -3,11 +3,11 @@
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { myProjects } from "@/lib/data/projects";
 import {
     RiArrowDownSFill,
     RiCloseLine,
     RiExternalLinkFill,
-    RiReactjsFill,
 } from "@remixicon/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -30,57 +30,6 @@ const ProjectsPage = () => {
             stack: "fullstack",
         },
     ] as const;
-
-    const myProjects = [
-        {
-            id: 1,
-            name: "KNOT - Cloud Business Management",
-            shortDescription: "A Full-Stack Business Management Tool.",
-            link: "https://knot-849b7.web.app/",
-            img: "/projects/knot.png",
-            mainTechIcon: RiReactjsFill,
-        },
-        {
-            id: 2,
-            name: "KNOT - Cloud Business Management",
-            shortDescription: "A Full-Stack Business Management Tool.",
-            link: "https://knot-849b7.web.app/",
-            img: "/projects/knot.png",
-            mainTechIcon: RiReactjsFill,
-        },
-        {
-            id: 3,
-            name: "KNOT - Cloud Business Management",
-            shortDescription: "A Full-Stack Business Management Tool.",
-            link: "https://knot-849b7.web.app/",
-            img: "/projects/knot.png",
-            mainTechIcon: RiReactjsFill,
-        },
-        {
-            id: 1,
-            name: "KNOT - Cloud Business Management",
-            shortDescription: "A Full-Stack Business Management Tool.",
-            link: "https://knot-849b7.web.app/",
-            img: "/projects/knot.png",
-            mainTechIcon: RiReactjsFill,
-        },
-        {
-            id: 2,
-            name: "KNOT - Cloud Business Management",
-            shortDescription: "A Full-Stack Business Management Tool.",
-            link: "https://knot-849b7.web.app/",
-            img: "/projects/knot.png",
-            mainTechIcon: RiReactjsFill,
-        },
-        {
-            id: 3,
-            name: "KNOT - Cloud Business Management",
-            shortDescription: "A Full-Stack Business Management Tool.",
-            link: "https://knot-849b7.web.app/",
-            img: "/projects/knot.png",
-            mainTechIcon: RiReactjsFill,
-        },
-    ];
 
     return (
         <div className="flex w-full h-full">
@@ -144,7 +93,7 @@ const ProjectsPage = () => {
                                             </div>
                                         </div>
                                         <div className="py-5 px-6">
-                                            <p>{project.shortDescription}</p>
+                                            <p>{project.title}</p>
                                             <div className="flex justify-between items-center">
                                                 <Button className="border rounded-[8px] mt-5 bg-[#1C2B3A] py-[10px] px-[14px]">
                                                     <a

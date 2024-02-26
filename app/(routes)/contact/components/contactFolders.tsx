@@ -33,7 +33,7 @@ const ContactFolders = () => {
                 <div className="flex items-center mb-2">
                     <RiExternalLinkLine className="mr-2" size={18} />
                     <a
-                        href=""
+                        href="https://www.linkedin.com/in/mobashirul-alam-seam/"
                         className="hover:text-white duration-200"
                         target="_blank"
                     >
@@ -43,7 +43,7 @@ const ContactFolders = () => {
                 <div className="flex items-center mb-2">
                     <RiExternalLinkLine className="mr-2" size={18} />
                     <a
-                        href="www.google.com"
+                        href="https://github.com/mobashirul-alam"
                         className="hover:text-white duration-200"
                         target="_blank"
                     >
