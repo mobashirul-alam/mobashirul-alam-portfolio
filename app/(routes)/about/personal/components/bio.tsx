@@ -14,7 +14,7 @@ const Bio = () => {
                 <div className="mb-10 mt-5 flex justify-start items-center gap-x-10 text-white">
                     <div>
                         <h1 className="text-6xl font-bold">
-                            <CountUp end={2} duration={5} />+
+                            <CountUp end={1} duration={3} />+
                         </h1>
 
                         <p className="text-sm">

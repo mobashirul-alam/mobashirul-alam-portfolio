@@ -109,7 +109,9 @@ const ProjectsPage = () => {
                                                     </a>
                                                 </Button>
                                                 <Button className="border rounded-[8px] mt-5 bg-[#1C2B3A] py-[10px] px-[14px]">
-                                                    <Link href={"/projects/1"}>
+                                                    <Link
+                                                        href={`/projects/${project.id}`}
+                                                    >
                                                         View Details
                                                     </Link>
                                                 </Button>

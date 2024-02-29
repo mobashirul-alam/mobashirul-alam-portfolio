@@ -1,14 +1,32 @@
+"use client";
+
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { myProjects } from "@/lib/data/projects";
 import {
     RiArrowDownSFill,
     RiCloseLine,
     RiExternalLinkLine,
 } from "@remixicon/react";
+import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
+import React from "react";
 
 const SingleProjectPage = ({ params }: { params: { projectId: string } }) => {
     const project = myProjects.find(
         (project) => project.id === params.projectId
     );
+
+    const plugin = React.useRef(
+        Autoplay({ delay: 3000, stopOnInteraction: true })
+    );
+
     return (
         <div className="h-full">
             <div className="flex w-full h-full">
@@ -90,61 +108,42 @@ const SingleProjectPage = ({ params }: { params: { projectId: string } }) => {
                             </div>
                         </div>
                     </div>
-                    {/* <ScrollArea className="h-[calc(100vh-260px)] px-28">
-                        <div className="grid grid-cols-3 gap-10 my-24">
-                            {myProjects.map((project) => (
-                                <div key={project.id} className="max-w-[370px]">
-                                    <div>
-                                        <p className="mb-3 text-[#607b96]">
-                                            {"//"} {project.name}
-                                        </p>
-                                        <div className="border rounded-2xl">
-                                            <div className="h-[145px] overflow-hidden relative">
-                                                <Image
-                                                    alt=""
-                                                    src={project.img}
-                                                    width={370}
-                                                    height={145}
-                                                    className="rounded-2xl"
-                                                />
-                                                <div className="absolute top-5 right-5 bg-[#86E1F9] rounded-[2px] p-1">
-                                                    <project.mainTechIcon
-                                                        size={20}
-                                                        className="text-black"
-                                                    />
-                                                </div>
-                                            </div>
-                                            <div className="py-5 px-6">
-                                                <p>{project.title}</p>
-                                                <div className="flex justify-between items-center">
-                                                    <Button className="border rounded-[8px] mt-5 bg-[#1C2B3A] py-[10px] px-[14px]">
-                                                        <a
-                                                            href={project.link}
-                                                            target="_blank"
-                                                            className="flex items-center gap-x-4"
-                                                        >
-                                                            Visit{" "}
-                                                            <RiExternalLinkFill
-                                                                size={16}
-                                                                className="mb-1"
-                                                            />
-                                                        </a>
-                                                    </Button>
-                                                    <Button className="border rounded-[8px] mt-5 bg-[#1C2B3A] py-[10px] px-[14px]">
-                                                        <Link
-                                                            href={"/projects/1"}
-                                                        >
-                                                            View Details
-                                                        </Link>
-                                                    </Button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
+                    <div className="grid grid-cols-2">
+                        <div className="h-[calc(100vh-260px)] p-5 w-full flex justify-center items-center">
+                            <Carousel
+                                opts={{
+                                    align: "start",
+                                }}
+                                orientation="vertical"
+                                className="w-full max-w-4xl -mt-5 rounded-xl"
+                                plugins={[plugin.current]}
+                                onMouseEnter={plugin.current.stop}
+                                onMouseLeave={plugin.current.reset}
+                            >
+                                <CarouselContent className="-mt-1 h-[450px]">
+                                    {project?.banners.map((banner, index) => (
+                                        <CarouselItem
+                                            key={index}
+                                            className="pt-1 md:basis-1/2 rounded-xl"
+                                        >
+                                            <Image
+                                                src={banner}
+                                                alt="project-img"
+                                                width={800}
+                                                height={450}
+                                                className="rounded-xl"
+                                            />
+                                        </CarouselItem>
+                                    ))}
+                                </CarouselContent>
+                                <CarouselPrevious className="bg-transparent border-[#607B96] text-[#607B96]" />
+                                <CarouselNext className="bg-transparent border-[#607B96] text-[#607B96]" />
+                            </Carousel>
                         </div>
-                    </ScrollArea> */}
+                        <ScrollArea className="h-[calc(100vh-260px)] p-5 border-l">
+                            <h3>Project Details</h3>
+                        </ScrollArea>
+                    </div>
                 </div>
             </div>
         </div>
