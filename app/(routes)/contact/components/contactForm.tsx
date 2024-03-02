@@ -61,20 +61,20 @@ const ContactForm = () => {
     customStyle.hljs.fontSize = "18px";
 
     return (
-        <div className="h-full w-full ">
-            <div className="border-b w-full">
+        <div className="h-full w-full">
+            <div className="hidden md:block border-b w-full">
                 <div className="w-64 flex justify-between items-center gap-x-3 py-3 px-4 border-r font-light">
                     <p>contacts</p>
                     <RiCloseLine />
                 </div>
             </div>
-            <div className="grid grid-cols-2 h-[calc(100%-48px)]">
-                <div className="border-r flex justify-center items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 h-[calc(100%-48px)]">
+                <div className="lg:border-r flex justify-center items-center">
                     {/* ----- MAIN FORM ----- */}
                     <MainForm {...{ setName, setEmail, setMessage }} />
                 </div>
 
-                <div className="flex justify-center items-center ">
+                <div className="hidden lg:flex justify-center items-center px-10">
                     <SyntaxHighlighter
                         language="javascript"
                         style={customStyle}

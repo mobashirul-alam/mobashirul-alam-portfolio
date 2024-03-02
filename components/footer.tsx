@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
             {/* Mobile view */}
             <div className="flex lg:hidden justify-between items-center">
-                <p className="py-4 px-5">find me in:</p>
+                <p className="py-4 px-4 sm:px-5 whitespace-nowrap">find me in:</p>
 
                 <div className="flex items-center">
                     <a

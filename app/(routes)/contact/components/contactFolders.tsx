@@ -13,7 +13,7 @@ const ContactFolders = () => {
                 <p>contacts</p>
             </div>
 
-            <div className="pl-4 py-6">
+            <div className="pl-4 py-2 lg:py-6">
                 <div className="flex items-center mb-2">
                     <RiMailFill className="mr-2" size={18} />
                     user@gmail.com
@@ -29,7 +29,7 @@ const ContactFolders = () => {
                 <p>find-me-also-in</p>
             </div>
 
-            <div className="pl-4 py-6">
+            <div className="pl-4 py-2 lg:py-6 border-b md:border-none">
                 <div className="flex items-center mb-2">
                     <RiExternalLinkLine className="mr-2" size={18} />
                     <a

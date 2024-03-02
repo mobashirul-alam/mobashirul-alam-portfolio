@@ -75,7 +75,7 @@ const MainForm: React.FC<MainFormProps> = ({
         <Form {...form}>
             <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="w-2/3 space-y-6"
+                className="w-11/12 md:w-3/4 lg:w-4/5 2xl:w-2/3 space-y-3 md:space-y-6 my-5 md:my-0"
             >
                 <FormField
                     control={form.control}
@@ -130,7 +130,7 @@ const MainForm: React.FC<MainFormProps> = ({
                                     placeholder="Message..."
                                     onChange={setMessage(field.value)}
                                     {...field}
-                                    className="min-h-36 font-[450] bg-transparent border-[#1E2D3D] focus:bg-transparent"
+                                    className="min-h-24 md:min-h-36 font-[450] bg-transparent border-[#1E2D3D] focus:bg-transparent"
                                 />
                             </FormControl>
                             <FormMessage />
@@ -142,11 +142,11 @@ const MainForm: React.FC<MainFormProps> = ({
                 </Button>
             </form>
 
-            <form
+            {/* <form
                 id="emailjs-form"
                 style={{ display: "none" }}
                 ref={emailJsFormRef}
-            ></form>
+            ></form> */}
         </Form>
     );
 };

@@ -23,10 +23,10 @@ const Navbar = () => {
     return (
         <div className="flex justify-between items-center text-[#607B96] font-[450] border-b w-full">
             <div className="flex items-center">
-                <div className="lg:w-80 lg:border-r py-4 pl-3 md:pl-5 whitespace-nowrap">
+                <div className="lg:w-60 xl:w-80 lg:border-r py-4 pl-3 md:pl-5 whitespace-nowrap">
                     <Link
                         href="/"
-                        className="hover:text-white duration-200 lg:w-[320px]"
+                        className="hover:text-white duration-200 xl:w-[320px]"
                     >
                         mobashirul-alam-seam
                     </Link>
