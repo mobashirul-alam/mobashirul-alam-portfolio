@@ -15,8 +15,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Dispatch, SetStateAction } from "react";
-import { toast } from "sonner";
+import { Dispatch, SetStateAction, useRef } from "react";
 
 const FormSchema = z.object({
     name: z.string().min(3, {
@@ -50,10 +49,26 @@ const MainForm: React.FC<MainFormProps> = ({
         },
     });
 
-    function onSubmit(data: z.infer<typeof FormSchema>) {
-        toast(data.name);
-        toast(data.email);
-        toast(data.message);
+    const emailJsFormRef = useRef<HTMLFormElement>(null);
+
+    async function onSubmit(data: z.infer<typeof FormSchema>) {
+        // try {
+        //     const formData = new FormData(emailJsFormRef.current);
+        //     formData.set("name", data.name);
+        //     formData.set("email", data.email);
+        //     formData.set("message", data.message);
+        //     await sendForm(
+        //         `${process.env.EMAILJS_SERVICE_ID}`,
+        //         `${process.env.EMAILJS_TEMPLATE_ID}`,
+        //         formData,
+        //         `${process.env.EMAILJS_USER_ID}`
+        //     );
+        //     toast.success("Email sent successfully");
+        // } catch (error: any) {
+        //     console.log(error);
+        //     toast.error("Error sending email: " + error.message);
+        // }
+        console.log(data);
     }
 
     return (
@@ -126,6 +141,12 @@ const MainForm: React.FC<MainFormProps> = ({
                     Submit
                 </Button>
             </form>
+
+            <form
+                id="emailjs-form"
+                style={{ display: "none" }}
+                ref={emailJsFormRef}
+            ></form>
         </Form>
     );
 };
