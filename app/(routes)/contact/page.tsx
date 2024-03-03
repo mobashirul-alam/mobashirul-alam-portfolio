@@ -1,10 +1,14 @@
+import Loader from "@/components/loader";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import ContactFolders from "./components/contactFolders";
-import ContactForm from "./components/contactForm";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
+
+const ContactFolders = dynamic(() => import("./components/contactFolders"));
+const ContactForm = dynamic(() => import("./components/contactForm"));
 
 const ContactPage = () => {
     return (
-        <>
+        <Suspense fallback={<Loader />}>
             <div className="hidden lg:flex justify-stretch items-start w-full h-[calc(100vh-155px)] 2xl:h-[calc(100vh-213px)]">
                 <div className="w-60 2xl:w-80 shrink-0 border-r h-full">
                     <ContactFolders />
@@ -23,7 +27,7 @@ const ContactPage = () => {
                     </div>
                 </div>
             </ScrollArea>
-        </>
+        </Suspense>
     );
 };
 

@@ -1,4 +1,7 @@
-import AboutRoutes from "./components/aboutRoutes";
+import Loader from "@/components/loader";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
+const AboutRoutes = dynamic(() => import("./components/aboutRoutes"));
 
 export default function AboutPageLayout({
     children,
@@ -10,7 +13,9 @@ export default function AboutPageLayout({
             <div className="md:border-r h-full w-full md:w-[64px]">
                 <AboutRoutes />
             </div>
-            <div className="w-full h-full">{children}</div>
+            <div className="w-full h-full">
+                <Suspense fallback={<Loader />}>{children}</Suspense>
+            </div>
         </div>
     );
 }

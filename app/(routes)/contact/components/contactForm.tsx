@@ -1,10 +1,11 @@
 "use client";
 
 import { RiCloseLine } from "@remixicon/react";
+import dynamic from "next/dynamic";
 import { useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { arta } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import MainForm from "./mainForm";
+const MainForm = dynamic(() => import("./mainForm"));
 
 const ContactForm = () => {
     const [name, setName] = useState("");

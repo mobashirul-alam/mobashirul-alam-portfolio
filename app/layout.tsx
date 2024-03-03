@@ -1,11 +1,11 @@
 import Footer from "@/components/footer";
-import TopProgress from "@/components/topProgress";
 import { Toaster } from "@/components/ui/sonner";
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
 const MyNavbar = dynamic(() => import("@/components/navbar"));
+const TopProgress = dynamic(() => import("@/components/topProgress"));
 const firaCode = Fira_Code({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
