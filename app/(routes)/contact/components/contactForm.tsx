@@ -74,7 +74,7 @@ const ContactForm = () => {
                     <MainForm {...{ setName, setEmail, setMessage }} />
                 </div>
 
-                <div className="hidden lg:flex justify-center items-center px-10">
+                <div className="hidden lg:flex justify-center items-center px-10 lg:px-6 xl:px-10 py-0">
                     <SyntaxHighlighter
                         language="javascript"
                         style={customStyle}

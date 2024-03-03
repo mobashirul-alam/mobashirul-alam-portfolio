@@ -135,7 +135,7 @@ const Navbar = () => {
                                 </SheetClose>
                             </div>
                         </div>
-                        <SheetFooter className="mt-auto">
+                        <SheetFooter className="mt-auto w-full">
                             <Footer />
                         </SheetFooter>
                     </SheetContent>

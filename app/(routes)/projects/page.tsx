@@ -32,8 +32,8 @@ const ProjectsPage = () => {
     ] as const;
 
     return (
-        <div className="flex w-full h-full">
-            <div className="w-80 shrink-0 border-r h-full">
+        <div className="flex flex-col md:flex-row w-full md:h-full">
+            <div className="w-full md:w-52 lg:w-[272px] xl:w-80 shrink-0 h-full">
                 <div className="flex items-center gap-x-3 py-3 pl-4 border-b text-white font-light">
                     <RiArrowDownSFill />
                     <p>projects</p>
@@ -61,15 +61,15 @@ const ProjectsPage = () => {
             </div>
 
             {/* --- PROJECTS --- */}
-            <div className="w-full">
+            <div className="w-full border-t md:border-t-0 md:border-l">
                 <div className="border-b">
-                    <div className="w-64 flex justify-between items-center gap-x-3 py-3 px-4 border-r font-light">
+                    <div className="w-full md:w-64 flex justify-between items-center gap-x-3 py-3 px-4 md:border-r font-light">
                         <p>all projects</p>
                         <RiCloseLine />
                     </div>
                 </div>
-                <ScrollArea className="h-[calc(100vh-260px)] px-28">
-                    <div className="grid grid-cols-3 gap-10 my-24">
+                <ScrollArea className="h-[calc(100vh-376px)] md:h-[calc(100vh-202px)] 2xl:h-[calc(100vh-262px)] px-5 lg:px-10 xl:px-5 2xl:px-20">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 xl:gap-5 2xl:gap-10 my-5 lg:my-10 xl:my-14 2xl:my-16">
                         {myProjects.map((project) => (
                             <div key={project.id} className="max-w-[370px]">
                                 <div>
@@ -92,7 +92,7 @@ const ProjectsPage = () => {
                                                 />
                                             </div>
                                         </div>
-                                        <div className="py-5 px-6">
+                                        <div className="py-5 xl:py-3 2xl:py-5 px-6 xl:px-3 2xl:px-6">
                                             <p>{project.title}</p>
                                             <div className="flex justify-between items-center">
                                                 <Button className="border rounded-[8px] mt-5 bg-[#1C2B3A] py-[10px] px-[14px]">

@@ -6,7 +6,7 @@ import {
 
 const Footer = () => {
     return (
-        <div className="border-t text-[#607B96]">
+        <div className="border-t text-[#607B96] w-full">
             <div className="hidden lg:flex justify-between items-center">
                 <div className="flex items-center">
                     <p className="py-4 px-5 border-r">find me in:</p>
@@ -37,7 +37,9 @@ const Footer = () => {
             </div>
             {/* Mobile view */}
             <div className="flex lg:hidden justify-between items-center">
-                <p className="py-4 px-4 sm:px-5 whitespace-nowrap">find me in:</p>
+                <p className="py-4 px-4 sm:px-5 whitespace-nowrap">
+                    find me in:
+                </p>
 
                 <div className="flex items-center">
                     <a

@@ -1,3 +1,5 @@
+"use client";
+
 import {
     RiArrowDownSFill,
     RiExternalLinkLine,
@@ -14,11 +16,22 @@ const ContactFolders = () => {
             </div>
 
             <div className="pl-4 py-2 lg:py-6">
-                <div className="flex items-center mb-2">
+                <div
+                    className="flex items-center mb-2"
+                    onClick={() =>
+                        (window.location.href =
+                            "mailto:mobashirulalamseam@gmail.com")
+                    }
+                >
                     <RiMailFill className="mr-2" size={18} />
-                    user@gmail.com
+                    mob...@gmail.com
                 </div>
-                <div className="flex items-center mb-2">
+                <div
+                    className="flex items-center mb-2"
+                    onClick={() =>
+                        (window.location.href = "tel:+8801643424044")
+                    }
+                >
                     <RiPhoneFill className="mr-2" size={18} />
                     +3598246359
                 </div>

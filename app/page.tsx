@@ -16,13 +16,16 @@ export default function Home() {
                         <h3 className="text-[#4D5BCE] text-[20px] md:text-[32px] lg:text-[20px] xl:text-[32px] font-[450] leading-[26px] md:leading-[42px] mb-20 lg:mb-6 xl:mb-20">
                             {">"} Front-end Developer
                         </h3>
-                        <p className="text-[#607B96] text-wrap text-sm md:text-base lg:text-sm xl:text-base font-[450] mb-2">
+                        <p className="hidden md:block text-[#607B96] text-wrap text-sm md:text-base lg:text-sm xl:text-base font-[450] mb-2">
                             {"//"} crafting the web through code and creative
                             innovation
                         </p>
-                        <p className="text-[#607B96] text-sm md:text-base lg:text-sm xl:text-base font-[450] mb-2">
+                        <p className="hidden md:block text-[#607B96] text-sm md:text-base lg:text-sm xl:text-base font-[450] mb-2">
                             {"//"} visit my github profile to know my coding
                             experience
+                        </p>
+                        <p className="md:hidden text-[#607B96] text-sm md:text-base lg:text-sm xl:text-base font-[450] mb-2">
+                            {"//"} find my profile on github
                         </p>
                         <div className="text-base lg:text-sm xl:text-base font-medium">
                             <p className="">
