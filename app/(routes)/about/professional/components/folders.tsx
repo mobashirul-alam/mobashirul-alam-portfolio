@@ -17,13 +17,13 @@ const Folders: React.FC<FoldersProps> = ({
     setSelectedFolder,
 }) => {
     return (
-        <div className="w-64">
+        <div className="w-full md:w-64">
             <div className="flex items-center gap-x-3 py-3 pl-4 border-b text-white font-light">
                 <RiArrowDownSFill />
                 <p>professional-info</p>
             </div>
 
-            <div className="pl-4 py-6">
+            <div className="pl-4 py-3 md:py-6">
                 <div className="flex items-center mb-2">
                     <RiArrowRightSLine className="mr-3" />
                     <div
@@ -89,7 +89,7 @@ const Folders: React.FC<FoldersProps> = ({
                 <p>contacts</p>
             </div>
 
-            <div className="pl-4 py-6">
+            <div className="pl-4 py-3 md:py-6">
                 <div className="flex items-center mb-2">
                     <RiMailFill className="mr-2" size={18} />
                     user@gmail.com

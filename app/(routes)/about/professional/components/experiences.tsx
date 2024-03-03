@@ -2,9 +2,9 @@ import { RiCloseLine, RiLinkedinBoxFill } from "@remixicon/react";
 
 const Experiences = () => {
     return (
-        <div className="w-full border-r">
+        <div className="w-full lg:border-r border-t md:border-t-0 md:border-l">
             <div className="border-b">
-                <div className="w-64 flex justify-between items-center gap-x-3 py-3 px-4 border-r font-light">
+                <div className="w-full md:w-64 flex justify-between items-center gap-x-3 py-3 px-4 md:border-r font-light">
                     <p>experiences</p>
                     <RiCloseLine />
                 </div>

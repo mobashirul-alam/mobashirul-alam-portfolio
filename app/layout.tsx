@@ -22,7 +22,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${firaCode.className} h-screen p-3 lg:p-5 2xl:p-[49px] bg-[#010c15] text-[#607B96]`}
+                className={`${firaCode.className} h-screen p-3 md:p-5 2xl:p-[49px] bg-[#010c15] text-[#607B96]`}
             >
                 <div className="bg-[#011627] h-full border border-[#1E2D3D] rounded-[8px] flex flex-col justify-between">
                     <TopProgress />

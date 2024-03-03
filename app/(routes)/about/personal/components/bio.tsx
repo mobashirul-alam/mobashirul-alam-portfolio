@@ -3,15 +3,15 @@ import CountUp from "react-countup";
 
 const Bio = () => {
     return (
-        <div className="w-full border-r">
+        <div className="w-full md:border-x">
             <div className="border-b">
-                <div className="w-64 flex justify-between items-center gap-x-3 py-3 px-4 border-r font-light">
+                <div className="w-full md:w-64 lg:w-min flex justify-between items-center gap-x-3 lg:gap-x-8 py-3 px-4 md:border-r font-light">
                     <p>bio</p>
                     <RiCloseLine />
                 </div>
             </div>
             <div className="p-5">
-                <div className="mb-10 mt-5 flex justify-start items-center gap-x-10 text-white">
+                <div className="mb-10 md:mb-5 xl:mb-10 mt-5 md:mt-0 xl:mt-5 flex justify-start items-center gap-x-10 text-white">
                     <div>
                         <h1 className="text-6xl font-bold">
                             <CountUp end={1} duration={3} />+

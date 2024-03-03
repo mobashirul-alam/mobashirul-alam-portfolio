@@ -2,9 +2,9 @@ import { RiCloseLine, RiGraduationCapLine } from "@remixicon/react";
 
 const Education = () => {
     return (
-        <div className="w-full border-r">
+        <div className="w-full lg:border-r md:border-l">
             <div className="border-b">
-                <div className="w-64 flex justify-between items-center gap-x-3 py-3 px-4 border-r font-light">
+                <div className="w-full md:w-64 flex justify-between items-center gap-x-3 py-3 px-4 md:border-r font-light">
                     <p>education</p>
                     <RiCloseLine />
                 </div>

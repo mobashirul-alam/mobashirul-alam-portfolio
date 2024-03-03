@@ -1,4 +1,4 @@
-import AboutRoutes from "./components/aboutRoutes.jsx";
+import AboutRoutes from "./components/aboutRoutes";
 
 export default function AboutPageLayout({
     children,
@@ -6,8 +6,8 @@ export default function AboutPageLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <div className="flex items-start h-full">
-            <div className="border-r h-full w-[64px]">
+        <div className="flex flex-col md:flex-row items-start h-full">
+            <div className="md:border-r h-full w-full md:w-[64px]">
                 <AboutRoutes />
             </div>
             <div className="w-full h-full">{children}</div>
