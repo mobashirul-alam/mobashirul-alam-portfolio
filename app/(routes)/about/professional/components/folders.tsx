@@ -91,7 +91,7 @@ const Folders: React.FC<FoldersProps> = ({
 
             <div className="pl-4 py-3 md:py-6">
                 <div
-                    className="flex items-center mb-2"
+                    className="flex items-center mb-2 cursor-pointer"
                     onClick={() =>
                         (window.location.href =
                             "mailto:mobashirulalamseam@gmail.com")
@@ -101,13 +101,13 @@ const Folders: React.FC<FoldersProps> = ({
                     mob...@gmail.com
                 </div>
                 <div
-                    className="flex items-center mb-2"
+                    className="flex items-center mb-2 cursor-pointer"
                     onClick={() =>
                         (window.location.href = "tel:+8801643424044")
                     }
                 >
                     <RiPhoneFill className="mr-2" size={18} />
-                    +3598246359
+                    +8801643424044
                 </div>
             </div>
         </div>

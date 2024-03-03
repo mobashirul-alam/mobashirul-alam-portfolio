@@ -17,7 +17,7 @@ const ContactFolders = () => {
 
             <div className="pl-4 py-2 lg:py-6">
                 <div
-                    className="flex items-center mb-2"
+                    className="flex items-center mb-2 cursor-pointer"
                     onClick={() =>
                         (window.location.href =
                             "mailto:mobashirulalamseam@gmail.com")
@@ -27,13 +27,13 @@ const ContactFolders = () => {
                     mob...@gmail.com
                 </div>
                 <div
-                    className="flex items-center mb-2"
+                    className="flex items-center mb-2 cursor-pointer"
                     onClick={() =>
                         (window.location.href = "tel:+8801643424044")
                     }
                 >
                     <RiPhoneFill className="mr-2" size={18} />
-                    +3598246359
+                    +8801643424044
                 </div>
             </div>
 
