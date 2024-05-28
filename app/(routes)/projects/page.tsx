@@ -2,7 +2,6 @@
 
 import Loader from "@/components/loader";
 import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { myProjects } from "@/lib/data/projects";
 import {
@@ -15,23 +14,23 @@ import Link from "next/link";
 import { Suspense } from "react";
 
 const ProjectsPage = () => {
-    const items = [
-        {
-            id: 1,
-            label: "All",
-            stack: "all",
-        },
-        {
-            id: 2,
-            label: "Front-end",
-            stack: "frontend",
-        },
-        {
-            id: 3,
-            label: "Full-stack",
-            stack: "fullstack",
-        },
-    ] as const;
+    // const items = [
+    //     {
+    //         id: 1,
+    //         label: "All",
+    //         stack: "all",
+    //     },
+    //     {
+    //         id: 2,
+    //         label: "Front-end",
+    //         stack: "frontend",
+    //     },
+    //     {
+    //         id: 3,
+    //         label: "Full-stack",
+    //         stack: "fullstack",
+    //     },
+    // ] as const;
 
     return (
         <Suspense fallback={<Loader />}>
@@ -43,7 +42,7 @@ const ProjectsPage = () => {
                     </div>
 
                     {/* Lists */}
-                    <div className="p-5 space-y-3">
+                    {/* <div className="p-5 space-y-3">
                         {items.map((item) => (
                             <div
                                 key={item.id}
@@ -60,7 +59,7 @@ const ProjectsPage = () => {
                                 </p>
                             </div>
                         ))}
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* --- PROJECTS --- */}

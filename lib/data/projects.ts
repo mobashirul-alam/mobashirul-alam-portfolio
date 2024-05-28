@@ -1,6 +1,6 @@
 import { RiReactjsFill } from "@remixicon/react";
 import { BiLogoMongodb, BiLogoTypescript } from "react-icons/bi";
-import { SiExpress, SiFirebase, SiTailwindcss } from "react-icons/si";
+import { SiExpress, SiFirebase, SiPrisma, SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs, TbBrandNodejs } from "react-icons/tb";
 
 export const myProjects = [
@@ -114,6 +114,58 @@ export const myProjects = [
         link: "https://scold-portfolio.vercel.app/",
         clientRepoLink: "https://github.com/mobashirul-alam/scold-portfolio",
         serverRepoLink: "",
+        shortDescription: `<div>
+            <h3>
+                Projects
+            </h3>
+            <p>
+                innerHTML in reactjs
+            </p> 
+        </div>`,
+        description: `<div>
+            <h3>
+                Projects
+            </h3>
+            <p>
+                innerHTML in reactjs
+            </p> 
+        </div>`,
+    },
+    {
+        id: "4",
+        name: "Prime Mart e-commerce app",
+        title: "An e-commerce application with easy dashboard control and secured payment system.",
+        img: "/projects/prime-mart/prime-mart-1.png",
+        mainTechIcon: TbBrandNextjs,
+        banners: [
+            "/projects/prime-mart/prime-mart-1.png",
+            "/projects/prime-mart/prime-mart-2.png",
+            "/projects/prime-mart/prime-mart-3.png",
+            "/projects/prime-mart/prime-mart-4.png",
+            "/projects/prime-mart/prime-mart-5.png",
+            "/projects/prime-mart/prime-mart-6.png",
+            "/projects/prime-mart/prime-mart-7.png",
+            "/projects/prime-mart/prime-mart-8.png",
+            "/projects/prime-mart/prime-mart-9.png",
+            "/projects/prime-mart/prime-mart-10.png",
+            "/projects/prime-mart/prime-mart-11.png",
+            "/projects/prime-mart/prime-mart-12.png",
+            "/projects/prime-mart/prime-mart-13.png",
+            "/projects/prime-mart/prime-mart-14.png",
+            "/projects/prime-mart/prime-mart-15.png",
+        ],
+        usedTech: [
+            { name: "React", icon: RiReactjsFill },
+            { name: "Next.js", icon: TbBrandNextjs },
+            { name: "Tailwind CSS", icon: SiTailwindcss },
+            { name: "TypeScript", icon: BiLogoTypescript },
+            { name: "Prisma", icon: SiPrisma },
+            { name: "MongoDB", icon: BiLogoMongodb },
+        ],
+        link: "https://prime-mart-frontend.vercel.app/",
+        adminLink: "https://prime-mart-dashboard.vercel.app",
+        clientRepoLink: "https://github.com/ms-next-dev/prime-mart-frontend",
+        serverRepoLink: "https://github.com/ms-next-dev/prime-mart-dashboard",
         shortDescription: `<div>
             <h3>
                 Projects

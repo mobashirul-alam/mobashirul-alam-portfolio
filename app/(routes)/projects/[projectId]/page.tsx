@@ -74,6 +74,21 @@ const SingleProjectPage = ({ params }: { params: { projectId: string } }) => {
                                     Live link
                                 </a>
                             </div>
+                            {project?.adminLink && (
+                                <div className="flex items-center mb-2">
+                                    <RiExternalLinkLine
+                                        className="mr-2"
+                                        size={18}
+                                    />
+                                    <a
+                                        href={project?.adminLink}
+                                        className="hover:text-white duration-200"
+                                        target="_blank"
+                                    >
+                                        Admin link
+                                    </a>
+                                </div>
+                            )}
                             <div className="flex items-center mb-2">
                                 <RiExternalLinkLine
                                     className="mr-2"
