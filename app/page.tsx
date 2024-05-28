@@ -18,8 +18,11 @@ export default function Home() {
                             <h1 className="text-[#E5E9F0] font-light text-5xl md:text-6xl lg:text-5xl xl:text-6xl leading-[62px] md:leading-[82px] lg:leading-[62px] xl:leading-[82px]">
                                 Mobashirul <br /> Alam Seam
                             </h1>
-                            <h3 className="text-[#4D5BCE] text-[20px] md:text-[32px] lg:text-[20px] xl:text-[32px] font-[450] leading-[26px] md:leading-[42px] mb-20 lg:mb-6 xl:mb-20">
+                            <h3 className="text-[#4D5BCE] text-[20px] md:text-[32px] lg:text-[20px] xl:text-[32px] font-[450] leading-[26px] md:leading-[42px] ">
                                 {">"} Front-end Developer
+                            </h3>
+                            <h3 className="text-[#4D5BCE] text-[20px] md:text-[32px] lg:text-[20px] xl:text-[32px] font-[450] leading-[26px] md:leading-[42px] mb-20 lg:mb-6 xl:mb-20">
+                                {">"} MERN Stack Developer
                             </h3>
                             <p className="hidden md:block text-[#607B96] text-wrap text-sm md:text-base lg:text-sm xl:text-base font-[450] mb-2">
                                 {"//"} crafting the web through code and

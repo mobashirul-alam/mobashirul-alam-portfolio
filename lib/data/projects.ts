@@ -1,7 +1,7 @@
 import { RiReactjsFill } from "@remixicon/react";
 import { BiLogoMongodb, BiLogoTypescript } from "react-icons/bi";
 import { SiExpress, SiFirebase, SiPrisma, SiTailwindcss } from "react-icons/si";
-import { TbBrandNextjs, TbBrandNodejs } from "react-icons/tb";
+import { TbBrandNextjs, TbBrandNodejs, TbBrandRedux } from "react-icons/tb";
 
 export const myProjects = [
     {
@@ -26,6 +26,7 @@ export const myProjects = [
         usedTech: [
             { name: "React", icon: RiReactjsFill },
             { name: "Tailwind CSS", icon: SiTailwindcss },
+            { name: "Redux", icon: TbBrandRedux },
             { name: "Node.js", icon: TbBrandNodejs },
             { name: "MongoDB", icon: BiLogoMongodb },
             { name: "Express", icon: SiExpress },
