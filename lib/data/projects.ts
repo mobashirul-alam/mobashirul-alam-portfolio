@@ -1,11 +1,58 @@
 import { RiReactjsFill } from "@remixicon/react";
-import { BiLogoTypescript } from "react-icons/bi";
-import { SiTailwindcss } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
+import { BiLogoMongodb, BiLogoTypescript } from "react-icons/bi";
+import { SiExpress, SiFirebase, SiTailwindcss } from "react-icons/si";
+import { TbBrandNextjs, TbBrandNodejs } from "react-icons/tb";
 
 export const myProjects = [
     {
         id: "1",
+        name: "Dev Diary",
+        title: "A MERN stack blog application using React & Tailwind",
+        img: "/projects/dev-diary/dev-diary-1.png",
+        mainTechIcon: RiReactjsFill,
+        banners: [
+            "/projects/dev-diary/dev-diary-1.png",
+            "/projects/dev-diary/dev-diary-2.png",
+            "/projects/dev-diary/dev-diary-3.png",
+            "/projects/dev-diary/dev-diary-4.png",
+            "/projects/dev-diary/dev-diary-5.png",
+            "/projects/dev-diary/dev-diary-6.png",
+            "/projects/dev-diary/dev-diary-7.png",
+            "/projects/dev-diary/dev-diary-8.png",
+            "/projects/dev-diary/dev-diary-9.png",
+            "/projects/dev-diary/dev-diary-10.png",
+            "/projects/dev-diary/dev-diary-11.png",
+        ],
+        usedTech: [
+            { name: "React", icon: RiReactjsFill },
+            { name: "Tailwind CSS", icon: SiTailwindcss },
+            { name: "Node.js", icon: TbBrandNodejs },
+            { name: "MongoDB", icon: BiLogoMongodb },
+            { name: "Express", icon: SiExpress },
+            { name: "Firebase", icon: SiFirebase },
+        ],
+        link: "https://dev-diary.onrender.com/",
+        clientRepoLink: "https://github.com/mobashirul-alam/dev-diary",
+        serverRepoLink: "",
+        shortDescription: `<div>
+            <h3>
+                Projects
+            </h3>
+            <p>
+                innerHTML in reactjs
+            </p>
+        </div>`,
+        description: `<div>
+            <h3>
+                Projects
+            </h3>
+            <p>
+                innerHTML in reactjs
+            </p>
+        </div>`,
+    },
+    {
+        id: "2",
         name: "Hydra VR Landing Page",
         title: "A simple landing page using Tailwind CSS.",
         img: "/projects/hydra/img-1.png",
@@ -43,7 +90,7 @@ export const myProjects = [
         </div>`,
     },
     {
-        id: "2",
+        id: "3",
         name: "Scold Portfolio",
         title: "A portfolio website with responsive view.",
         img: "/projects/scold/img-1.png",
@@ -84,46 +131,4 @@ export const myProjects = [
             </p> 
         </div>`,
     },
-    // {
-    //     id: "2",
-    //     name: "KNOT - Cloud Business Management",
-    //     title: "A Full-Stack Business Management Tool.",
-    //     img: "/projects/knot.png",
-    //     mainTechIcon: RiReactjsFill,
-    //     banners: [
-    //         "/projects/knot.png",
-    //         "/projects/knot.png",
-    //         "/projects/knot.png",
-    //         "/projects/knot.png",
-    //         "/projects/knot.png",
-    //         "/projects/knot.png",
-    //     ],
-    //     usedTech: [
-    //         { name: "React", icon: RiReactjsFill },
-    //         { name: "Tailwind CSS", icon: SiTailwindcss },
-    //         { name: "Node.js", icon: TbBrandNodejs },
-    //         { name: "MongoDB", icon: BiLogoMongodb },
-    //         { name: "Express", icon: SiExpress },
-    //         { name: "Firebase", icon: SiFirebase },
-    //     ],
-    //     link: "https://knot-849b7.web.app/",
-    //     clientRepoLink: "https://github.com/TeamHero6/knot-client",
-    //     serverRepoLink: "https://github.com/TeamHero6/knot-server",
-    //     shortDescription: `<div>
-    //         <h3>
-    //             Projects
-    //         </h3>
-    //         <p>
-    //             innerHTML in reactjs
-    //         </p>
-    //     </div>`,
-    //     description: `<div>
-    //         <h3>
-    //             Projects
-    //         </h3>
-    //         <p>
-    //             innerHTML in reactjs
-    //         </p>
-    //     </div>`,
-    // },
 ];
