@@ -16,6 +16,7 @@ import {
 } from "@remixicon/react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const SingleProjectPage = ({ params }: { params: { projectId: string } }) => {
@@ -26,6 +27,8 @@ const SingleProjectPage = ({ params }: { params: { projectId: string } }) => {
     const plugin = React.useRef(
         Autoplay({ delay: 3000, stopOnInteraction: true })
     );
+
+    const router = useRouter();
 
     return (
         <div className="h-full">
@@ -126,7 +129,10 @@ const SingleProjectPage = ({ params }: { params: { projectId: string } }) => {
                             <div className="border-t md:border-t-0 md:border-r w-full md:w-max">
                                 <div className="flex justify-between md:justify-start items-center gap-x-3 py-3 px-4 font-light">
                                     <p>{project?.name}</p>
-                                    <RiCloseLine />
+                                    <RiCloseLine
+                                        className="cursor-pointer hover:text-white duration-500"
+                                        onClick={() => router.back()}
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -165,7 +171,7 @@ const SingleProjectPage = ({ params }: { params: { projectId: string } }) => {
                                 </Carousel>
                             </div>
                             <ScrollArea className="2xl:h-[calc(100vh-260px)] p-5 lg:border-l">
-                                <h3>Project Details</h3>
+                                {/* <h3>Project Details</h3> */}
                             </ScrollArea>
                         </div>
                     </div>

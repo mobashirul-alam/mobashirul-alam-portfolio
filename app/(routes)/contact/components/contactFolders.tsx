@@ -24,7 +24,14 @@ const ContactFolders = () => {
                     }
                 >
                     <RiMailFill className="mr-2" size={18} />
-                    mob...@gmail.com
+                    <span className="block md:hidden 2xl:block">
+                        mobashirulalamseam@gmail.com
+                    </span>
+                    <span className="hidden md:block 2xl:hidden">
+                        mobashirulalamseam
+                        <br />
+                        @gmail.com
+                    </span>
                 </div>
                 <div
                     className="flex items-center mb-2 cursor-pointer"

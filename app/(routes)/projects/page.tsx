@@ -95,7 +95,9 @@ const ProjectsPage = () => {
                                                 </div>
                                             </div>
                                             <div className="py-5 xl:py-3 2xl:py-5 px-6 xl:px-3 2xl:px-6">
-                                                <p>{project.title}</p>
+                                                <p className="h-24">
+                                                    {project.title}
+                                                </p>
                                                 <div className="flex justify-between items-center">
                                                     <Button className="border rounded-[8px] mt-5 bg-[#1C2B3A] py-[10px] px-[14px]">
                                                         <a

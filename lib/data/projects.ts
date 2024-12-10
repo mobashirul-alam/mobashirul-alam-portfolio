@@ -5,7 +5,92 @@ import { TbBrandNextjs, TbBrandNodejs, TbBrandRedux } from "react-icons/tb";
 
 export const myProjects = [
     {
-        id: "1",
+        id: "pr-tastybite",
+        name: "TastyBite",
+        title: "Comprehensive Restaurant Management System with Enhanced User Experience and Streamlined Order Processing",
+        img: "/projects/tasty-bite/tasty-bite-1.png",
+        mainTechIcon: TbBrandNextjs,
+        banners: [
+            "/projects/tasty-bite/tasty-bite-1.png",
+            "/projects/tasty-bite/tasty-bite-2.png",
+            "/projects/tasty-bite/tasty-bite-3.png",
+            "/projects/tasty-bite/tasty-bite-4.png",
+            "/projects/tasty-bite/tasty-bite-5.png",
+            "/projects/tasty-bite/tasty-bite-6.png",
+            "/projects/tasty-bite/tasty-bite-7.png",
+            "/projects/tasty-bite/tasty-bite-8.png",
+            "/projects/tasty-bite/tasty-bite-9.png",
+        ],
+        usedTech: [
+            { name: "Next.js", icon: TbBrandNextjs },
+            { name: "Tailwind CSS", icon: SiTailwindcss },
+            { name: "TypeScript", icon: BiLogoTypescript },
+            { name: "Node.js", icon: TbBrandNodejs },
+            { name: "MongoDB", icon: BiLogoMongodb },
+            { name: "Express", icon: SiExpress },
+        ],
+        link: "https://tour-hub-frontend.vercel.app",
+        clientRepoLink: "https://github.com/mobashirul-alam/TourHub-Frontend",
+        serverRepoLink: "",
+        shortDescription: `<div>
+            <h3>
+                Projects
+            </h3>
+            <p>
+                innerHTML in reactjs
+            </p>
+        </div>`,
+        description: `<div>
+            <h3>
+                Projects
+            </h3>
+            <p>
+                innerHTML in reactjs
+            </p>
+        </div>`,
+    },
+    {
+        id: "pr-tourhub",
+        name: "TourHub",
+        title: "TourHub: Effortless Travel Booking with Personalized Experiences",
+        img: "/projects/tour-hub/tour-hub-1.png",
+        mainTechIcon: TbBrandNextjs,
+        banners: [
+            "/projects/tour-hub/tour-hub-1.png",
+            "/projects/tour-hub/tour-hub-2.png",
+            "/projects/tour-hub/tour-hub-3.png",
+            "/projects/tour-hub/tour-hub-4.png",
+            "/projects/tour-hub/tour-hub-5.png",
+        ],
+        usedTech: [
+            { name: "Next.js", icon: TbBrandNextjs },
+            { name: "Tailwind CSS", icon: SiTailwindcss },
+            { name: "Node.js", icon: TbBrandNodejs },
+            { name: "MongoDB", icon: BiLogoMongodb },
+            { name: "Express", icon: SiExpress },
+        ],
+        link: "https://tour-hub-frontend.vercel.app",
+        clientRepoLink: "https://github.com/mobashirul-alam/TourHub-Frontend",
+        serverRepoLink: "",
+        shortDescription: `<div>
+            <h3>
+                Projects
+            </h3>
+            <p>
+                innerHTML in reactjs
+            </p>
+        </div>`,
+        description: `<div>
+            <h3>
+                Projects
+            </h3>
+            <p>
+                innerHTML in reactjs
+            </p>
+        </div>`,
+    },
+    {
+        id: "pr-devdiary",
         name: "Dev Diary",
         title: "A MERN stack blog application using React & Tailwind",
         img: "/projects/dev-diary/dev-diary-1.png",
@@ -53,7 +138,7 @@ export const myProjects = [
         </div>`,
     },
     {
-        id: "2",
+        id: "pr-hydra",
         name: "Hydra VR Landing Page",
         title: "A simple landing page using Tailwind CSS.",
         img: "/projects/hydra/img-1.png",
@@ -91,7 +176,7 @@ export const myProjects = [
         </div>`,
     },
     {
-        id: "3",
+        id: "pr-scold",
         name: "Scold Portfolio",
         title: "A portfolio website with responsive view.",
         img: "/projects/scold/img-1.png",
@@ -133,7 +218,7 @@ export const myProjects = [
         </div>`,
     },
     {
-        id: "4",
+        id: "pr-primemart",
         name: "Prime Mart e-commerce app",
         title: "An e-commerce application with easy dashboard control and secured payment system.",
         img: "/projects/prime-mart/prime-mart-1.png",
