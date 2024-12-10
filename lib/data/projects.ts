@@ -29,8 +29,10 @@ export const myProjects = [
             { name: "MongoDB", icon: BiLogoMongodb },
             { name: "Express", icon: SiExpress },
         ],
-        link: "https://tour-hub-frontend.vercel.app",
-        clientRepoLink: "https://github.com/mobashirul-alam/TourHub-Frontend",
+        link: "https://tasty-bite-web.vercel.app",
+        dashLink: "https://tasty-bite-dashboard.vercel.app",
+        clientRepoLink: "https://github.com/mobashirul-alam/TastyBite-Website",
+        dashRepoLink: "https://github.com/mobashirul-alam/TastyBite-Dashboard",
         serverRepoLink: "",
         shortDescription: `<div>
             <h3>

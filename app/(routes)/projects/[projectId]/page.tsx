@@ -77,6 +77,21 @@ const SingleProjectPage = ({ params }: { params: { projectId: string } }) => {
                                     Live link
                                 </a>
                             </div>
+                            {project?.dashLink && (
+                                <div className="flex items-center mb-2">
+                                    <RiExternalLinkLine
+                                        className="mr-2"
+                                        size={18}
+                                    />
+                                    <a
+                                        href={project?.dashLink}
+                                        className="hover:text-white duration-200"
+                                        target="_blank"
+                                    >
+                                        Dashboard link
+                                    </a>
+                                </div>
+                            )}
                             {project?.adminLink && (
                                 <div className="flex items-center mb-2">
                                     <RiExternalLinkLine
@@ -117,6 +132,21 @@ const SingleProjectPage = ({ params }: { params: { projectId: string } }) => {
                                         target="_blank"
                                     >
                                         Server Repo
+                                    </a>
+                                </div>
+                            )}
+                            {project?.dashRepoLink && (
+                                <div className="flex items-center mb-2">
+                                    <RiExternalLinkLine
+                                        className="mr-2"
+                                        size={18}
+                                    />
+                                    <a
+                                        href={project?.dashRepoLink}
+                                        className="hover:text-white duration-200"
+                                        target="_blank"
+                                    >
+                                        Dashboard Repo
                                     </a>
                                 </div>
                             )}
