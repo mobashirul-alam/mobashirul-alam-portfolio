@@ -1,13 +1,19 @@
 import { RiCloseLine } from "@remixicon/react";
+import { useRouter } from "next/navigation";
 import CountUp from "react-countup";
 
 const Bio = () => {
+    const router = useRouter();
+
     return (
         <div className="w-full md:border-x">
             <div className="border-b">
                 <div className="w-full md:w-64 lg:w-min flex justify-between items-center gap-x-3 lg:gap-x-8 py-3 px-4 md:border-r font-light">
                     <p>bio</p>
-                    <RiCloseLine />
+                    <RiCloseLine
+                        className="cursor-pointer hover:text-white duration-500"
+                        onClick={() => router.push("/")}
+                    />
                 </div>
             </div>
             <div className="p-5">

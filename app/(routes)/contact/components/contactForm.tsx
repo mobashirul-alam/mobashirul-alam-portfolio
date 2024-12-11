@@ -2,6 +2,8 @@
 
 import { RiCloseLine } from "@remixicon/react";
 import dynamic from "next/dynamic";
+import { useRouter } from "next/navigation";
+
 import { useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { arta } from "react-syntax-highlighter/dist/esm/styles/hljs";
@@ -11,6 +13,8 @@ const ContactForm = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+
+    const router = useRouter();
 
     const currentDate = new Date();
 
@@ -66,7 +70,10 @@ const ContactForm = () => {
             <div className="hidden md:block border-b w-full">
                 <div className="w-64 flex justify-between items-center gap-x-3 py-3 px-4 border-r font-light">
                     <p>contacts</p>
-                    <RiCloseLine />
+                    <RiCloseLine
+                        className="cursor-pointer hover:text-white duration-500"
+                        onClick={() => router.push("/")}
+                    />
                 </div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 h-[calc(100%-48px)]">

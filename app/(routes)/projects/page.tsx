@@ -11,6 +11,7 @@ import {
 } from "@remixicon/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Suspense } from "react";
 
 const ProjectsPage = () => {
@@ -31,6 +32,8 @@ const ProjectsPage = () => {
     //         stack: "fullstack",
     //     },
     // ] as const;
+
+    const router = useRouter();
 
     return (
         <Suspense fallback={<Loader />}>
@@ -67,7 +70,10 @@ const ProjectsPage = () => {
                     <div className="border-b">
                         <div className="w-full md:w-64 flex justify-between items-center gap-x-3 py-3 px-4 md:border-r font-light">
                             <p>all projects</p>
-                            <RiCloseLine />
+                            <RiCloseLine
+                                className="cursor-pointer hover:text-white duration-500"
+                                onClick={() => router.push("/")}
+                            />
                         </div>
                     </div>
                     <ScrollArea className="h-[calc(100vh-376px)] md:h-[calc(100vh-202px)] 2xl:h-[calc(100vh-262px)] px-5 lg:px-10 xl:px-5 2xl:px-20">
