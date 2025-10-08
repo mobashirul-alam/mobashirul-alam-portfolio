@@ -20,6 +20,8 @@ export const myProjects = [
             "/projects/minimal-portfolio/minimal-portfolio-2.png",
             "/projects/minimal-portfolio/minimal-portfolio-3.png",
             "/projects/minimal-portfolio/minimal-portfolio-4.png",
+            "/projects/minimal-portfolio/minimal-portfolio-5.png",
+            "/projects/minimal-portfolio/minimal-portfolio-6.png",
         ],
         usedTech: [
             { name: "Next.js", icon: TbBrandNextjs },
