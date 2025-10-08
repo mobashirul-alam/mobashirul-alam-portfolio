@@ -3,7 +3,9 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import { Suspense } from "react";
 
-const LottiePlayer = dynamic(() => import("@/components/ui/lottiePlayer"));
+const LottiePlayer = dynamic(() => import("@/components/ui/lottiePlayer"), {
+    ssr: false,
+});
 
 export default function Home() {
     return (
