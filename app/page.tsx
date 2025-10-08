@@ -62,6 +62,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
+                    {/* Lottie animation */}
                     <div className="hidden lg:flex justify-end items-center">
                         <div className="relative">
                             <LottiePlayer src="https://lottie.host/1500a3e0-d621-4225-9e05-3cd214891e81/WlmhjUswwG.json" />
