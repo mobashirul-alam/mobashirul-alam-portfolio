@@ -1,9 +1,54 @@
 import { RiReactjsFill } from "@remixicon/react";
 import { BiLogoMongodb, BiLogoTypescript } from "react-icons/bi";
 import { SiExpress, SiFirebase, SiPrisma, SiTailwindcss } from "react-icons/si";
-import { TbBrandNextjs, TbBrandNodejs, TbBrandRedux } from "react-icons/tb";
+import {
+    TbBrandFramerMotion,
+    TbBrandNextjs,
+    TbBrandNodejs,
+    TbBrandRedux,
+} from "react-icons/tb";
 
 export const myProjects = [
+    {
+        id: "pr-minimal-portfolio",
+        name: "Minimal Portfolio",
+        title: "A modern, animated single-page portfolio website built with Next.js, featuring smooth animations and responsive design.",
+        img: "/projects/minimal-portfolio/minimal-portfolio-1.png",
+        mainTechIcon: TbBrandNextjs,
+        banners: [
+            "/projects/minimal-portfolio/minimal-portfolio-1.png",
+            "/projects/minimal-portfolio/minimal-portfolio-2.png",
+            "/projects/minimal-portfolio/minimal-portfolio-3.png",
+            "/projects/minimal-portfolio/minimal-portfolio-4.png",
+        ],
+        usedTech: [
+            { name: "Next.js", icon: TbBrandNextjs },
+            { name: "Tailwind CSS", icon: SiTailwindcss },
+            { name: "TypeScript", icon: BiLogoTypescript },
+            { name: "Motion", icon: TbBrandFramerMotion },
+        ],
+        link: "https://minimal-portfolio-sandy.vercel.app/",
+        dashLink: "",
+        clientRepoLink: "https://github.com/mobashirul-alam/minimal-portfolio",
+        dashRepoLink: "",
+        serverRepoLink: "",
+        shortDescription: `<div>
+            <h3>
+                Projects
+            </h3>
+            <p>
+                innerHTML in reactjs
+            </p>
+        </div>`,
+        description: `<div>
+            <h3>
+                Projects
+            </h3>
+            <p>
+                innerHTML in reactjs
+            </p>
+        </div>`,
+    },
     {
         id: "pr-tastybite",
         name: "TastyBite",
