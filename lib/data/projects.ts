@@ -1,6 +1,13 @@
 import { RiReactjsFill } from "@remixicon/react";
 import { BiLogoMongodb, BiLogoTypescript } from "react-icons/bi";
-import { SiExpress, SiFirebase, SiPrisma, SiTailwindcss } from "react-icons/si";
+import { DiCode } from "react-icons/di";
+import {
+    SiClerk,
+    SiExpress,
+    SiFirebase,
+    SiPrisma,
+    SiTailwindcss,
+} from "react-icons/si";
 import {
     TbBrandFramerMotion,
     TbBrandNextjs,
@@ -9,6 +16,50 @@ import {
 } from "react-icons/tb";
 
 export const myProjects = [
+    {
+        id: "pr-my-docs",
+        name: "My Docs",
+        title: "A premium hub for creating documents, notes, and tasks, built with Next.js and Tailwind CSS.",
+        img: "/projects/my-docs/my-docs-1.png",
+        mainTechIcon: TbBrandNextjs,
+        banners: [
+            "/projects/my-docs/my-docs-1.png",
+            "/projects/my-docs/my-docs-2.png",
+            "/projects/my-docs/my-docs-3.png",
+            "/projects/my-docs/my-docs-4.png",
+            "/projects/my-docs/my-docs-5.png",
+            "/projects/my-docs/my-docs-6.png",
+        ],
+        usedTech: [
+            { name: "Next.js", icon: TbBrandNextjs },
+            { name: "Tailwind CSS", icon: SiTailwindcss },
+            { name: "TypeScript", icon: BiLogoTypescript },
+            { name: "Clerk", icon: SiClerk },
+            { name: "Convex", icon: DiCode },
+            { name: "Liveblocks", icon: DiCode },
+        ],
+        link: "https://my-docs-web.vercel.app/",
+        dashLink: "",
+        clientRepoLink: "https://github.com/mobashirul-alam/my-docs",
+        dashRepoLink: "",
+        serverRepoLink: "",
+        shortDescription: `<div>
+            <h3>
+                Projects
+            </h3>
+            <p>
+                innerHTML in reactjs
+            </p>
+        </div>`,
+        description: `<div>
+            <h3>
+                Projects
+            </h3>
+            <p>
+                innerHTML in reactjs
+            </p>
+        </div>`,
+    },
     {
         id: "pr-minimal-portfolio",
         name: "Minimal Portfolio",

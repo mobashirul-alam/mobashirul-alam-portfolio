@@ -2,7 +2,7 @@
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useState } from "react";
-import CodeSnippet from "../components/codeSnippet";
+import ShortProjectView from "../components/shortProjectView";
 import Bio from "./components/bio";
 import Education from "./components/education";
 import Folders from "./components/folders";
@@ -21,7 +21,7 @@ const PersonalInfo = () => {
                     {selectedFolder === "bio" && <Bio />}
                     {selectedFolder === "education" && <Education />}
 
-                    <CodeSnippet />
+                    <ShortProjectView />
                 </div>
             </div>
             <ScrollArea className="2xl:hidden h-[calc(100vh-193px)] md:h-[calc(100vh-155px)]">
@@ -34,7 +34,7 @@ const PersonalInfo = () => {
                         {selectedFolder === "bio" && <Bio />}
                         {selectedFolder === "education" && <Education />}
 
-                        <CodeSnippet />
+                        <ShortProjectView />
                     </div>
                 </div>
             </ScrollArea>
