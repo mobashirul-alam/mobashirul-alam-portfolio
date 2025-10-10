@@ -1,5 +1,6 @@
 import Footer from "@/components/footer";
 import { Toaster } from "@/components/ui/sonner";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { Fira_Code } from "next/font/google";
@@ -30,6 +31,7 @@ export default function RootLayout({
                     <div className="h-full">{children}</div>
                     <Footer />
                     <Toaster />
+                    <Analytics />
                 </div>
             </body>
         </html>
